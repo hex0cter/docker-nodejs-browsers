@@ -25,3 +25,6 @@ push: build
 	@$(DOCKER) push $(REGISTRY)/$(IMAGE):latest
 	@$(DOCKER) tag $(REGISTRY)/$(IMAGE):latest $(REGISTRY)/$(IMAGE):$(VERSION)
 	@$(DOCKER) push $(REGISTRY)/$(IMAGE):$(VERSION)
+
+test:
+	echo "Done"
