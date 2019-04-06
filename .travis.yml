@@ -5,6 +5,8 @@ services:
 
 node_js:
   - "10"
+  - "11"
+  - "12"
 
 branches:
   only:
@@ -13,6 +15,6 @@ branches:
 install:
   - node --version
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build --pull --rm --tag hex0cter/nodejs-browsers:latest .
-  - docker push hex0cter/nodejs-browsers:latest
+  - docker build --pull --rm --build-arg NODEJS=$(node --version) --tag hex0cter/nodejs-browsers:$(node --version) .
+  - docker push hex0cter/nodejs-browsers:$(node --version)
   - rm -f $HOME/.docker/config.json
