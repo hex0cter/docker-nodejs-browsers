@@ -13,6 +13,6 @@ branches:
 install:
   - node --version
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build --pull --rm --build-arg NODEJS=$(node --version) --tag hex0cter/nodejs-browsers:$(node --version) .
-  - docker push hex0cter/nodejs-browsers:$(node --version)
+  - docker build --pull --rm --build-arg NODEJS=$(node --version | sed 's/v//') --tag hex0cter/nodejs-browsers:$(node --version | sed 's/v//') .
+  - docker push hex0cter/nodejs-browsers:$(node --version | sed 's/v//')
   - rm -f $HOME/.docker/config.json
