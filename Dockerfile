@@ -1,5 +1,5 @@
 ARG NODEJS=12.8.0
-FROM node:${NODEJS} AS nodejs
+FROM node:${NODEJS}-alpine AS nodejs
 
 FROM hex0cter/alpine-browsers:latest
 LABEL maintainer="Daniel Han <hex0cter@gmail.com>"
