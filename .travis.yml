@@ -10,7 +10,7 @@ branches:
   only:
   - master
 
-install:
+script:
   - node --version
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build --pull --rm --build-arg NODEJS=$(node --version | sed 's/v//') --tag hex0cter/nodejs-browsers:$(node --version | sed 's/v//') .
