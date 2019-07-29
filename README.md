@@ -1,5 +1,6 @@
 
 ## Docker image for nodejs with Chromium and Firefox
+[![Build Status](https://travis-ci.org/hex0cter/docker-nodejs-browsers.svg?branch=master)](https://travis-ci.org/hex0cter/docker-nodejs-browsers)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/hex0cter/nodejs-browsers/latest)](https://hub.docker.com/r/hex0cter/nodejs-browsers)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers/builds)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers/builds)
