@@ -20,5 +20,5 @@ script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build --pull --rm --build-arg NODEJS=${NODEJS} --tag hex0cter/nodejs-browsers:${NODEJS} .
   - docker push hex0cter/nodejs-browsers:${NODEJS}
-  - if [[ "${LATEST_NODEJS}" == "${NODEJS}" ]]; then docker tag hex0cter/nodejs-browsers:${NODEJS} hex0cter/nodejs-browsers:latest && docker push hex0cter/nodejs-browsers:latest; fi
+  - if [[ "${LATEST_NODEJS}" == "v${NODEJS}" ]]; then docker tag hex0cter/nodejs-browsers:${NODEJS} hex0cter/nodejs-browsers:latest && docker push hex0cter/nodejs-browsers:latest; fi
   - rm -f $HOME/.docker/config.json
