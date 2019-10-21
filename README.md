@@ -1,9 +1,7 @@
 
 ## Docker image for nodejs with Chromium and Firefox
-[![Build Status](https://travis-ci.org/hex0cter/docker-nodejs-browsers.svg?branch=master)](https://travis-ci.org/hex0cter/docker-nodejs-browsers)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/hex0cter/nodejs-browsers/latest)](https://hub.docker.com/r/hex0cter/nodejs-browsers)
-[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers/builds)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers/builds)
+[![Build Status](https://travis-ci.org/hex0cter/docker-nodejs-browsers.svg?branch=master)](https://travis-ci.org/hex0cter/docker-nodejs-browsers)
 [![Docker Pulls](https://img.shields.io/docker/pulls/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers)
 
 This image allows you to run the web browser inside a docker container.
@@ -15,6 +13,15 @@ This image allows you to run the web browser inside a docker container.
 * nodejs
 * yarn
 * docker-cli
+
+## Supported nodejs versions:
+* 10.x.x
+* 11.x.x
+* 12.x.x
+* 13.x.x
+* 14.x.x
+
+(Note ***".x.x"*** above stands for the latest minor version)
 
 ## Pull the image
 ```bash
