@@ -2,7 +2,7 @@ FROM hex0cter/alpine-browsers:latest
 LABEL maintainer="Daniel Han <hex0cter@gmail.com>"
 
 RUN apk update \
-  && apk add yarn docker-cli python2 g++ libstdc++ make linux-headers \
+  && apk add yarn docker-cli libstdc++ \
   && rm -rf /var/cache/apk/*
 
 ARG NODEJS=12.8.0
