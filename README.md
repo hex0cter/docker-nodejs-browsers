@@ -1,7 +1,7 @@
 
 ## Docker image for nodejs with Chromium and Firefox
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/hex0cter/nodejs-browsers/latest)](https://hub.docker.com/r/hex0cter/nodejs-browsers)
-[![Build Status](https://travis-ci.org/hex0cter/docker-nodejs-browsers.svg?branch=master)](https://travis-ci.org/hex0cter/docker-nodejs-browsers)
+![Travis (.org)](https://img.shields.io/travis/hex0cter/docker-nodejs-browsers)
 [![Docker Pulls](https://img.shields.io/docker/pulls/hex0cter/nodejs-browsers)](https://hub.docker.com/r/hex0cter/nodejs-browsers)
 
 This image allows you to run the web browser inside a docker container.
